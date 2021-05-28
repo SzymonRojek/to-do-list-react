@@ -7,8 +7,8 @@ import Container from "./Container";
 
 
 const tasks = [
-  {id: 1, content: 'przejść na React', done: true},
-  {id: 2, content: 'zjeść obiad', done: true},
+  {id: 1, content: 'start to learn React.js', done: true},
+  {id: 2, content: 'buy strings', done: true},
 ];
 
 const hideDoneTasks = false;
