@@ -12,7 +12,7 @@ const Buttons = ({ tasks, hideDoneTasks }) => (
             {hideDoneTasks ? 'Show' : 'Hide'} done
           </button>
           <button 
-            className="buttons__button buttons__button--last" 
+            className="buttons__button" 
             disabled={tasks.every( ({ done }) => done)} 
           >
             Mark all done

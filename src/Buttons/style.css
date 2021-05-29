@@ -1,12 +1,6 @@
 .buttons {
-  display: grid;
-  grid-gap: 20px;
-}
-
-@media (min-width: 767px) {
-  .buttons {
-    grid-template-columns: auto auto;
-  }
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .buttons__button {
@@ -15,17 +9,14 @@
   border: none;
   background-color: transparent;
   outline: none;
-  transition: color .2s ease-in;
   cursor: pointer;
+  transition: color .2s ease-in;
 }
 
-.buttons__button--last {
-  margin-bottom: 30px;
-}
-
-@media (min-width: 767px) {
-  .buttons__button--last {
-    margin-bottom: 0;
+@media(max-width: 767px) {
+  .buttons__button {
+    flex-basis: 100%;
+    margin: 10px;
   }
 }
 
@@ -37,4 +28,8 @@
   background: rgb(255, 255, 255);
   color: rgb(201, 194, 194);
   cursor: not-allowed;
+}
+
+.buttons__button--hidden {
+  display: none;
 }

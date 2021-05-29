@@ -16,6 +16,7 @@ To-Do application will be developed with additional features.
 <table>
   <tr>
     <td><img src="./src/images/css-grid.png" width="50" height="50"></td>
+       <td><img src="./src/images/flexbox-icon.png" width="50" height="50"></td>
   </tr>
  </table>
 <table>
@@ -31,7 +32,6 @@ To-Do application will be developed with additional features.
 - Semantic HTML
 - BEM methodology
 - Responsive Web Design
-- Mobile first
 - ES6+
 
 ## Available Scripts:
@@ -50,7 +50,7 @@ You will also see any lint errors in the console.
 ```
 npm run build
 ```
-Builds the app for production to the build folder.
+Builds the app for production to thpm se build folder.
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.
