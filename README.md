@@ -3,7 +3,7 @@
 ## Description:
 This is a simple To-Do list application created in React.js, helps to organize our daily tasks. Use it to capture and organize tasks the moment they pop into your head. 
 
-To-Do application will be developed with additional features.
+To-Do application will be developed with additional features: mainly, I want to add functionality. 
 
 ## Technologies:
 
