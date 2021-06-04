@@ -33,6 +33,7 @@ To-Do application will be developed with additional features.
 - BEM methodology
 - Responsive Web Design
 - ES6+
+- Immutability concept
 
 ## Available Scripts:
 
