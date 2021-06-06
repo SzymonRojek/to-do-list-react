@@ -9,8 +9,10 @@ To-Do application will be developed with additional features: mainly, I want to 
 
 <table>
   <tr>
-    <td><img src="./src/images/react.jpeg" width="80" height="50"></td>
     <td><img src="./src/images/npm-icon.png" width="50" height="50"></td>
+    <td><img src="./src/images/jsx-icon.png" width="50" height="50"></td>
+    <td><img src="./src/images/react.jpeg" width="80" height="50"></td>
+   
   </tr>
 </table>
 <table>
@@ -21,9 +23,7 @@ To-Do application will be developed with additional features: mainly, I want to 
  </table>
 <table>
   <tr>
-    <td><img src="./src/images/html-icon.svg" width="50" height="50"></td>
     <td><img src="./src/images/css-icon.svg" width="50" height="50"> </td>
-    <td><img src="./src/images/js-icon.svg" width="50" height="50"></td>
   </tr>
  </table>
 
