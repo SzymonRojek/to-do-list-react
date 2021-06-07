@@ -5,6 +5,8 @@ This is a simple To-Do list application created in React.js, helps to organize o
 
 To-Do application will be developed with additional features: mainly, I want to add functionality. 
 
+This project was bootstrapped with **Create React App**.
+
 ## Technologies:
 
 <table>
