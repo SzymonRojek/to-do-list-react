@@ -27,9 +27,9 @@ This is a simple To-Do list application - this project was bootstrapped with **C
 
 
 ## I have used:
-- Semantic HTML
-- BEM methodology
 - Responsive Web Design
+- Create React App
+- Functional Components
 - ES6+
 - Immutability concept
 
