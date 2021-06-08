@@ -1,11 +1,7 @@
 ## 🎥  Preview site :arrow_right: [clickHere](https://szymonrojek.github.io/to-do-list-react/)
 
 ## Description:
-This is a simple To-Do list application created in React.js, helps to organize our daily tasks. Use it to capture and organize tasks the moment they pop into your head. 
-
-To-Do application will be developed with additional features: mainly, I want to add functionality. 
-
-This project was bootstrapped with **Create React App**.
+This is a simple To-Do list application - this project was bootstrapped with **Create React App**., helps to organize our daily tasks. Use it to capture and organize tasks the moment they pop into your head. 
 
 ## Technologies:
 
