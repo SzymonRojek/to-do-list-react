@@ -4,7 +4,7 @@ import "./style.css";
 const Form = ({ addNewTask }) => {
   const [newTaskContent, setNewTaskContent] = useState("");
 
-  const textInput = useRef();
+  const textInput = useRef(null);
 
   const handleFocus = () => {
     textInput.current.focus();
