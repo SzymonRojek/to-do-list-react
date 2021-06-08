@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-const Buttons = ({ tasks, hideDoneTasks }) => (
+const Buttons = ({ tasks, hideDone }) => (
     <div className="buttons">
       {tasks.length > 0 && (
         <React.Fragment>
@@ -9,7 +9,7 @@ const Buttons = ({ tasks, hideDoneTasks }) => (
             className="buttons__button"
             disabled={tasks.every( ({ done }) => !done)} 
           >
-            {hideDoneTasks ? 'Show' : 'Hide'} done
+            {hideDone ? 'Show' : 'Hide'} done
           </button>
           <button 
             className="buttons__button" 
@@ -17,8 +17,8 @@ const Buttons = ({ tasks, hideDoneTasks }) => (
           >
             Mark all done
           </button>
-        </React.Fragment>
-      )}
+        </React.Fragment> 
+      )} 
     </div>
 );
 
