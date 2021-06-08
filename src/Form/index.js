@@ -35,8 +35,9 @@ const Form = ({ addNewTask }) => {
         onChange={ ({ target }) => setNewTaskContent(target.value)}
       />
       <button 
-      onClick={handleFocus}
-      className="form__button">
+        onClick={handleFocus}
+        className="form__button"
+      >
         Add task
       </button>
     </form>
