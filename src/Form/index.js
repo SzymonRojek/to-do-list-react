@@ -13,9 +13,9 @@ const Form = ({ addNewTask }) => {
   const onFormSubmit = event => {
     event.preventDefault();
     
-    const reg = /^[\s]*$/;
+    const isEmptyWhiteSpaces= /^[\s]*$/;
 
-    if(reg.test(newTaskContent)) {
+    if(isEmptyWhiteSpaces.test(newTaskContent)) {
       return;
     }
 
