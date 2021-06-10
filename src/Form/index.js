@@ -13,7 +13,9 @@ const Form = ({ addNewTask }) => {
   const onFormSubmit = event => {
     event.preventDefault();
     
-    if(!newTaskContent) {
+    const reg = /^[\s]*$/;
+
+    if(reg.test(newTaskContent)) {
       return;
     }
 
