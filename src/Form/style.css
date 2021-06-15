@@ -35,7 +35,7 @@
 }
 
 @media (min-width: 767px) {
-  .form__button {
+  .form__button:hover {
     transform: scale(1.1);
   }
 }
