@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Form from "./Form";
 import Tasks from "./Tasks";
 import Buttons from "./Buttons";
@@ -44,6 +44,17 @@ function App() {
         id: tasks.length ? tasks[tasks.length - 1].id + 1 : 1,
       }]);
   };
+
+  useEffect(() => {
+    const tasks = JSON.parse(localStorage.getItem('tasks'));
+    if (tasks) {
+      setTasks(tasks);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+  }, [tasks]);
 
   return (
     <Container> 
