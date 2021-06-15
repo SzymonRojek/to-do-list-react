@@ -1,7 +1,7 @@
-import { useState, useRef  } from "react";
-import "./style.css";
+import { useState, useRef  } from 'react';
+import './style.css';
 
-const Form = ({ addNewTask }) => {
+export const Form = ({ addNewTask }) => {
   const [newTaskContent, setNewTaskContent] = useState("");
 
   const textInput = useRef(null);
@@ -44,6 +44,4 @@ const Form = ({ addNewTask }) => {
       </button>
     </form>
   ); 
-}
-
-export default Form;
+};
