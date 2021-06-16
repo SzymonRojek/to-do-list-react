@@ -15,8 +15,8 @@ This is a simple To-Do list application - this project was bootstrapped with **C
 </table>
 <table>
   <tr>
-    <td><img src="./src/images/css-grid.png" width="50" height="50"></td>
-       <td><img src="./src/images/flexbox-icon.png" width="50" height="50"></td>
+    <td><img src="./src/images/css-grid-icon.jpeg" width="50" height="50"></td>
+       <td><img src="./src/images/flexbox-icon.jpeg" width="50" height="50"></td>
   </tr>
  </table>
 <table>
