@@ -7,21 +7,21 @@ This is a simple To-Do list application - this project was bootstrapped with **C
 
 <table>
   <tr>
-    <td><img src="./src/images/npm-icon.png" width="50" height="50"></td>
-    <td><img src="./src/images/jsx-icon.png" width="50" height="50"></td>
+    <td><img src="./src/images/npm-icon.png" width="70" height="70"></td>
+    <td><img src="./src/images/jsx-icon.png" width="70" height="70"></td>
     <td><img src="./src/images/react.jpeg" width="80" height="50"></td>
    
   </tr>
 </table>
 <table>
   <tr>
-    <td><img src="./src/images/css-grid-icon.jpeg" width="50" height="50"></td>
-       <td><img src="./src/images/flexbox-icon.jpeg" width="50" height="50"></td>
+    <td><img src="./src/images/css-grid-icon.jpeg" width="90" height="80"></td>
+       <td><img src="./src/images/flexbox-icon.jpeg" width="90" height="80"></td>
   </tr>
  </table>
 <table>
   <tr>
-    <td><img src="./src/images/css-icon.svg" width="50" height="50"> </td>
+    <td><img src="./src/images/css-icon.svg" width="70" height="80"> </td>
   </tr>
  </table>
 
