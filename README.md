@@ -27,12 +27,17 @@ This is a simple To-Do list application - this project was bootstrapped with **C
 
 
 ## I have used:
-- Responsive Web Design
-- Create React App
-- Functional Components
-- ES6+
-- Immutability Concept
-- Local Storage
+:white_check_mark: Responsive Web Design
+<br>
+:white_check_mark: Create React App
+<br>
+:white_check_mark: Functional Components
+<br>
+:white_check_mark: ES6+
+<br>
+:white_check_mark: Immutability Concept
+<br>
+:white_check_mark: Local Storage
 
 ## Available Scripts:
 
