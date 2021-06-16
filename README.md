@@ -31,7 +31,8 @@ This is a simple To-Do list application - this project was bootstrapped with **C
 - Create React App
 - Functional Components
 - ES6+
-- Immutability concept
+- Immutability Concept
+- Local Storage
 
 ## Available Scripts:
 
