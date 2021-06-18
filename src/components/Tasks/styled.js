@@ -17,14 +17,6 @@ export const StyledItem = styled.li`
   ${({ hidden }) => hidden && css` display: none;`}
 `;
 
-// .tasks__singleTask {
-//   word-break: break-word;
-// }
-
-// .tasks__singleTask--done {
-//   text-decoration: line-through;
-// }
-
 export const TasksButton = styled.button`
   display: flex;
   justify-content: center;
@@ -52,7 +44,7 @@ export const TasksButton = styled.button`
     &:hover {
     background-color: #05af05;
   `}
-  
+
   &:active {
     outline: 1px solid #222;
   }
