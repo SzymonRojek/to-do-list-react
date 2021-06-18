@@ -1,7 +1,7 @@
 ## 🎥  Preview site :arrow_right: [clickHere](https://szymonrojek.github.io/to-do-list-react/)
 
 ## Description:
-This is a simple To-Do list application - this project was bootstrapped with **Create React App**., helps to organize our daily tasks. Use it to capture and organize tasks the moment they pop into your head. 
+This is a simple To-Do list application, helps to organize our daily tasks. Use it to capture and organize tasks the moment they pop into your head. 
 
 ## Technologies:
 
@@ -25,19 +25,20 @@ This is a simple To-Do list application - this project was bootstrapped with **C
   </tr>
  </table>
 
+This project was bootstrapped with **Create React App**.
 
 ## I have used:
-:white_check_mark: Responsive Web Design
-<br>
-:white_check_mark: Create React App
+:white_check_mark: Styled Components
 <br>
 :white_check_mark: Functional Components
 <br>
-:white_check_mark: ES6+
+:white_check_mark: ES6 features
 <br>
 :white_check_mark: Immutability Concept
 <br>
 :white_check_mark: Local Storage
+<br>
+:white_check_mark: Responsive Web Design
 
 ## Available Scripts:
 
