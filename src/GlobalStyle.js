@@ -13,4 +13,9 @@ export const GlobalStyle = createGlobalStyle`
   *, ::after, ::before {
     box-sizing: inherit;
   }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #eee;
+  }
 `;
