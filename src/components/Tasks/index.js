@@ -1,30 +1,30 @@
-import './style.css';
+import {
+  TaskWrapper,
+  StyledItem,
+  TasksButton,
+  Content
+} from './styled';
 
 export const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
-  <ul className="tasks">
+  <TaskWrapper>
     {tasks.map( task => (
-      <li
+      <StyledItem
         key={task.id}
-        className=
-        {`tasks__item${ task.done && hideDone ? " tasks__item--hidden" : ""}`}
+        hidden={task.done && hideDone}
         >
-        <button 
-          className="tasks__button tasks__button--toggleDone"
-          onClick={() => toggleTaskDone(task.id)}
+        <TasksButton 
+          toggleDone 
+          onClick={()=> toggleTaskDone(task.id)}
         >
           {task.done ? "✓" : ""}
-        </button>
-          <span className=
-            {`tasks__singleTask${ task.done ? " tasks__singleTask--done" : ""}`}>
-            {task.content} 
-          </span>
-        <button 
-          className="tasks__button"
-          onClick={() => removeTask(task.id)}
+        </TasksButton>
+          <Content done={task.done}>{task.content}</Content>
+        <TasksButton
+          remove  onClick={()=>removeTask(task.id)}
         >
           🗑
-        </button>
-      </li>
+        </TasksButton>
+      </StyledItem>
     ))}
-  </ul>
+  </TaskWrapper>
 );
