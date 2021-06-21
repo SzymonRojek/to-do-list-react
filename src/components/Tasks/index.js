@@ -1,30 +1,30 @@
 import {
-  TaskWrapper,
-  StyledItem,
-  TasksButton,
+  List,
+  Item,
+  Button,
   Content
 } from './styled';
 
 export const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
-  <TaskWrapper>
+  <List>
     {tasks.map( task => (
-      <StyledItem
+      <Item
         key={task.id}
         hidden={task.done && hideDone}
         >
-        <TasksButton 
+        <Button 
           toggleDone 
           onClick={()=> toggleTaskDone(task.id)}
         >
           {task.done ? "✓" : ""}
-        </TasksButton>
+        </Button>
           <Content done={task.done}>{task.content}</Content>
-        <TasksButton
+        <Button
           remove  onClick={()=>removeTask(task.id)}
         >
           🗑
-        </TasksButton>
-      </StyledItem>
+        </Button >
+      </Item>
     ))}
-  </TaskWrapper>
+  </List>
 );

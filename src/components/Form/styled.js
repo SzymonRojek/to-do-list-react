@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledForm = styled.form`
+export const FormWrapper = styled.form`
   display: grid;
   grid-template-columns: 1fr auto;
   grid-gap: 20px;
@@ -10,7 +10,7 @@ export const StyledForm = styled.form`
   }
 `;
 
-export const StyledInput = styled.input`
+export const Input = styled.input`
   padding: 10px;
   border: 1px solid #ddd;
   outline: none;
@@ -21,7 +21,7 @@ export const StyledInput = styled.input`
   }
 `;
 
-export const StyledButton = styled.button`
+export const Button = styled.button`
   padding: 10px;
   color: #fff;
   border: 1px solid transparent;

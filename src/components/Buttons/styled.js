@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-export const ButtonsWrapper = styled.div`
+export const Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
 `;
 
-export const StyledButton = styled.button`
+export const Button = styled.button`
   margin: 0 20px 0 0;
   color: teal;
   border: none;

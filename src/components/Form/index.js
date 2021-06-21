@@ -1,8 +1,8 @@
 import { useState, useRef  } from 'react';
 import {
-  StyledForm,
-  StyledInput,
-  StyledButton
+  FormWrapper,
+  Input,
+  Button
 } from './styled';
 
 export const Form = ({ addNewTask }) => {
@@ -28,17 +28,17 @@ export const Form = ({ addNewTask }) => {
   }
 
   return (
-    <StyledForm onSubmit={onFormSubmit}>
-      <StyledInput  
+    <FormWrapper onSubmit={onFormSubmit}>
+      <Input 
         ref={inputRef}
         value={newTaskContent}
         placeholder="What you have to do?" 
         autoFocus 
         onChange={ ({ target }) => setNewTaskContent(target.value)}
       />
-      <StyledButton onClick={handleFocus}>
+      <Button onClick={handleFocus}>
         Add task
-      </StyledButton>
-    </StyledForm>
+      </Button>
+    </FormWrapper>
   ); 
 };
