@@ -1,5 +1,8 @@
 ## 🎥  Preview site :arrow_right: [clickHere](https://szymonrojek.github.io/to-do-list-react/)
 
+<img src="./src/images/to-do-list.gif" width="400" height="260">
+
+
 ## Description:
 This is a simple To-Do list application, helps to organize our daily tasks. Use it to capture and organize tasks the moment they pop into your head. 
 
