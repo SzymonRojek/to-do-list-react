@@ -1,7 +1,8 @@
 import { useLocalStorageState } from './useLocalStorageState';
 
 export const useTasks = (tasks, setTasks) => {
-  [tasks, setTasks] = useLocalStorageState("tasks", [])
+  [tasks, setTasks] = useLocalStorageState("tasks", []);
+
   const removeTask = id => {
     setTasks(tasks => tasks.filter(task => task.id !== id));
   };
@@ -39,5 +40,5 @@ export const useTasks = (tasks, setTasks) => {
     toggleTaskDone,
     setAllDone,
     addNewTask
-  }
+  };
 };
