@@ -17,15 +17,15 @@ export const Form = ({ addNewTask }) => {
   const onFormSubmit = event => {
     event.preventDefault();
     
-    const isEmptyWhiteSpaces= /^[\s]*$/;
-
-    if(isEmptyWhiteSpaces.test(newTaskContent)) {
-      return;
+    const trimmedNewTaskContent = newTaskContent.trim();
+    
+      if (!trimmedNewTaskContent) {
+        return;
     }
 
-    addNewTask(newTaskContent.trim());
+    addNewTask(trimmedNewTaskContent);
     setNewTaskContent("");
-  };
+  }
 
   return (
     <StyledForm onSubmit={onFormSubmit}>
