@@ -1,6 +1,7 @@
 import { useLocalStorageState } from './useLocalStorageState';
 
 export const useTasks = (tasks, setTasks) => {
+  
   [tasks, setTasks] = useLocalStorageState("tasks", []);
 
   const removeTask = id => {

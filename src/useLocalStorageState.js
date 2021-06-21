@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 
 export const useLocalStorageState = (keyName, initialValue) => {
+  
   const getInitialValue = () => {
     const localStorageValue = localStorage.getItem(keyName);
   
@@ -9,7 +10,7 @@ export const useLocalStorageState = (keyName, initialValue) => {
     } 
   
     return JSON.parse(localStorage.getItem(keyName));
-  }
+  };
 
   const [state, setState] = useState(getInitialValue);
 
