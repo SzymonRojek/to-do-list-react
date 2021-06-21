@@ -36,6 +36,10 @@ This project was bootstrapped with **Create React App**.
 <br>
 :white_check_mark: Immutability Concept
 <br>
+:white_check_mark: Hooks: useState, useEffect, useRef
+<br>
+:white_check_mark: Custom Hooks
+<br>
 :white_check_mark: Local Storage
 <br>
 :white_check_mark: Responsive Web Design
