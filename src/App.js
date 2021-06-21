@@ -8,7 +8,9 @@ import { Buttons } from './components/Buttons';
 
 export function App() {
   const [hideDone, setHideDone] = useState(false);
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState(
+    JSON.parse(localStorage.getItem("tasks")) || []
+  );
 
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone);
@@ -46,15 +48,7 @@ export function App() {
   };
 
   useEffect(() => {
-    const tasks = JSON.parse(localStorage.getItem('tasks'));
-    
-    if (tasks) {
-      setTasks(tasks);
-    }
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem('tasks', JSON.stringify(tasks));
+    localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
 
   return (
