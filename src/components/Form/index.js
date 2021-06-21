@@ -8,17 +8,17 @@ import {
 export const Form = ({ addNewTask }) => {
   const [newTaskContent, setNewTaskContent] = useState("");
 
-  const textInput = useRef(null);
+  const inputRef = useRef(null);
 
   const handleFocus = () => {
-    textInput.current.focus();
+    inputRef.current.focus();
   };
 
   const onFormSubmit = event => {
     event.preventDefault();
     
     const trimmedNewTaskContent = newTaskContent.trim();
-    
+
       if (!trimmedNewTaskContent) {
         return;
     }
@@ -30,7 +30,7 @@ export const Form = ({ addNewTask }) => {
   return (
     <StyledForm onSubmit={onFormSubmit}>
       <StyledInput  
-        ref={textInput}
+        ref={inputRef}
         value={newTaskContent}
         placeholder="What you have to do?" 
         autoFocus 
