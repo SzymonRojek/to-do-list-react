@@ -6,7 +6,7 @@ export const useTasks = () => {
   const removeTask = id => {
     setTasks(tasks => tasks.filter(task => task.id !== id));
   };
-  
+
   const toggleTaskDone = id => {
     setTasks(tasks => tasks.map(task => {
       if(task.id === id) {

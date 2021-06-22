@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
 
 export const Button = styled.button`
   margin: 0 20px 0 0;
-  color: teal;
+  color: ${({ theme }) => theme.color.hideMarkButtons};
   border: none;
   background-color: transparent;
   outline: none;
@@ -15,20 +15,19 @@ export const Button = styled.button`
   transition: color .2s ease-in;
 
   &:hover {
-    color: hsl(180, 100%, 40%);
+    color: ${({ theme }) => theme.hover.hideMarkButtons}
   }
 
   &:active {
-    color: hsl(180, 100%, 15%);
+    color: ${({ theme }) => theme.active.hideMarkButtons};
   }
 
   &:disabled {
-    background: rgb(255, 255, 255);
-    color: rgb(201, 194, 194);
+    color: ${({ theme }) => theme.disabled.hideDoneButton};
     cursor: not-allowed;
   }
 
-  @media(max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px){
     flex-basis: 100%;
     margin: 10px;
   }

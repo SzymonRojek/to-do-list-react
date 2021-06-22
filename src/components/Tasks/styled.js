@@ -12,7 +12,7 @@ export const Item = styled.li`
   grid-gap: 10px;
   align-items: center;
   padding: 10px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid ${({ theme }) => theme.accent.borderLight};
 
   ${({ hidden }) => hidden && css` display: none;`}
 `;
@@ -22,7 +22,7 @@ export const Button = styled.button`
   justify-content: center;
   align-items: center;
   margin: 0 10px 0 10px;
-  color: #fff;
+  color: ${({ theme }) => theme.color.doneButton};
   width: 30px;
   height: 30px;
   padding: 0;
@@ -31,22 +31,22 @@ export const Button = styled.button`
   transition: background-color .3s ease-in;
 
   ${({ remove }) => remove && css`
-    background-color: hsl(0, 83%, 47%);
+    background-color: ${({ theme }) => theme.backgroundColor.removeButton};
 
     &:hover {
-      background-color: hsl(0, 83%, 60%);
+      background-color: ${({ theme }) => theme.hover.removeButton};
     }
   `}
   
   ${({ toggleDone }) => toggleDone && css`
-    background-color: #1C8622;
+    background-color: ${({ theme }) => theme.backgroundColor.doneButton};
     
     &:hover {
-    background-color: #05af05;
+    background-color: ${({ theme }) => theme.hover.doneButton};
   `}
 
   &:active {
-    outline: 1px solid #222;
+    outline: 1px solid ${({ theme }) => theme.accent.outline};
   }
 `;
 
