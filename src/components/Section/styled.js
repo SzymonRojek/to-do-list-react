@@ -15,7 +15,7 @@ export const Header = styled.header`
   padding: 20px;
   border-bottom: 1px solid ${({ theme }) => theme.accent.borderLight};
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px)  {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     grid-template-columns: 1fr;
   }
 `;

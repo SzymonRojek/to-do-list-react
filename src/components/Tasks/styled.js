@@ -14,7 +14,7 @@ export const Item = styled.li`
   padding: 10px;
   border-bottom: 1px solid ${({ theme }) => theme.accent.borderLight};
 
-  ${({ hidden }) => hidden && css` display: none;`}
+  ${({ hidden }) => hidden && css`display: none;`}
 `;
 
 export const Button = styled.button`

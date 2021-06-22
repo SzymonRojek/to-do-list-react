@@ -15,7 +15,7 @@ export const Button = styled.button`
   transition: color .2s ease-in;
 
   &:hover {
-    color: ${({ theme }) => theme.hover.hideMarkButtons}
+    color: ${({ theme }) => theme.hover.hideMarkButtons};
   }
 
   &:active {
@@ -27,7 +27,7 @@ export const Button = styled.button`
     cursor: not-allowed;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px){
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     flex-basis: 100%;
     margin: 10px;
   }
