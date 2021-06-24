@@ -33,6 +33,6 @@ export const theme = {
   },
   breakpoint: {
     mobile: 767,
-    horizontal: 768
-  }
+    ipad: 768
+  } 
 };

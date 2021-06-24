@@ -32,7 +32,7 @@ export const Button = styled.button`
   &:hover {
     background-color: ${({ theme }) => theme.hover.addButton};
 
-    @media (min-width: ${({ theme }) => theme.breakpoint.horizontal}px) {
+    @media (min-width: ${({ theme }) => theme.breakpoint.iPad}px) {
       transform: scale(1.1);
     }
   }
