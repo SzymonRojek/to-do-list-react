@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
 
 export const Button = styled.button`
   margin: 0 20px 0 0;
-  color: ${({ theme }) => theme.color.hideMarkButtons};
+  color: ${({ theme }) => theme.color.hideAndFinishButtons};
   border: none;
   background-color: transparent;
   outline: none;
@@ -15,11 +15,11 @@ export const Button = styled.button`
   transition: color .2s ease-in;
 
   &:hover {
-    color: ${({ theme }) => theme.hover.hideMarkButtons};
+    color: ${({ theme }) => theme.hover.hideAndFinishButtons};
   }
 
   &:active {
-    color: ${({ theme }) => theme.active.hideMarkButtons};
+    color: ${({ theme }) => theme.active.hideAndFinishButtons};
   }
 
   &:disabled {

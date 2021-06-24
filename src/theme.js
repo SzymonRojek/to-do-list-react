@@ -1,6 +1,6 @@
 export const theme = {
   color: {
-    hideMarkButtons: "teal",
+    hideAndFinishButtons: "teal",
     addButton: "#fff",
     doneButton: "#fff"
   },
@@ -14,12 +14,12 @@ export const theme = {
   },
   hover: {
     addButton: "hsl(180, 100%, 30%)",
-    hideMarkButtons: "hsl(180, 100%, 40%)",
+    hideAndFinishButtons: "hsl(180, 100%, 40%)",
     doneButton: "#05af05",
     removeButton: "hsl(0, 83%, 60%)"
   },
   active: {
-    hideMarkButtons: "hsl(180, 100%, 15%)",
+    hideAndFinishButtons: "hsl(180, 100%, 15%)",
     addButton: "hsl(180, 100%, 35%)"
   },
   disabled: {

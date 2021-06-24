@@ -14,7 +14,7 @@ export const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
           onClick={setAllDone} 
           disabled={tasks.every( ({ done }) => done)} 
         >
-          Mark all done
+          Finish all
         </Button>
       </> 
     )} 
