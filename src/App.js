@@ -19,7 +19,7 @@ export function App() {
     removeTask,
     toggleTaskDone,
     setAllDone,
-    addNewTask
+    addNewTask,
   } = useTasks();
 
   return (
