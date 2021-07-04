@@ -5,7 +5,7 @@ import {
   Content
 } from './styled';
 
-export const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
+export const TasksList = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
   <List>
     {tasks.map( task => (
       <Item

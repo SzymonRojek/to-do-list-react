@@ -7,6 +7,33 @@ import { Normalize } from 'styled-normalize';
 import { GlobalStyle } from './GlobalStyle';
 import { ThemeProvider } from "styled-components";
 import { theme } from "./theme";
+import { configureStore } from '@reduxjs/toolkit';
+
+const initialState = {
+  tasks: [],
+};
+
+const tasksReducer = (state = initialState, action) => {
+  switch(action.type) {
+    case "addTask" :
+      return {
+        ...state,
+        tasks: [
+          ...state.tasks,
+          {
+            content: action.payload,
+          },
+        ],
+      };
+
+    default:
+      return state;
+  }
+};
+
+const store = configureStore({ reducer: tasksReducer });
+
+console.log(store.getState());
 
 ReactDOM.render(
   <React.StrictMode>
