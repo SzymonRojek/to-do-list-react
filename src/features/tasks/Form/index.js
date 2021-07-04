@@ -40,7 +40,7 @@ export const Form = () => {
         value={newTaskContent}
         placeholder="What you have to do?" 
         autoFocus 
-        onChange={ ({ target }) => setNewTaskContent(target.value)}
+        onChange={({ target }) => setNewTaskContent(target.value)}
       />
       <Button onClick={handleFocus}>
         Add task
