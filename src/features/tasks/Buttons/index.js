@@ -12,7 +12,7 @@ export const Buttons = ({ setAllDone }) => {
         <>
           <Button 
             onClick={() => dispatch(toggleHideDone())}
-            // disabled={tasks.every( ({ done }) => !done)} 
+            disabled={tasks.every( ({ done }) => !done)} 
           >
             {hideDone ? 'Show' : 'Hide'} done
           </Button>

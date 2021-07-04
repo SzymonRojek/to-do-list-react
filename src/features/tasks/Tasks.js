@@ -1,3 +1,4 @@
+
 import { Container } from '../../common/Container';
 import { Header } from '../../common/Header';
 import { Section } from '../../common/Section';
@@ -10,9 +11,7 @@ export const Tasks = () => {
 
   const {
     removeTask,
-    toggleTaskDone,
     setAllDone,
-    addNewTask,
   } = useTasks();
 
   return (
@@ -20,14 +19,13 @@ export const Tasks = () => {
       <Header title="List of tasks" />
       <Section 
         title="Add new task" 
-        body={<Form addNewTask={addNewTask} />} 
+        body={<Form />} 
       />
       <Section
         title="List of to do"
         body={
           <TasksList 
             removeTask={removeTask} 
-            toggleTaskDone={toggleTaskDone}
           />
         }
         extraHeaderContent={
