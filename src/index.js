@@ -6,42 +6,19 @@ import reportWebVitals from './reportWebVitals';
 import { Normalize } from 'styled-normalize';
 import { GlobalStyle } from './GlobalStyle';
 import { ThemeProvider } from "styled-components";
-import { theme } from "./theme";
-import { configureStore } from '@reduxjs/toolkit';
-
-const initialState = {
-  tasks: [],
-};
-
-const tasksReducer = (state = initialState, action) => {
-  switch(action.type) {
-    case "addTask" :
-      return {
-        ...state,
-        tasks: [
-          ...state.tasks,
-          {
-            content: action.payload,
-          },
-        ],
-      };
-
-    default:
-      return state;
-  }
-};
-
-const store = configureStore({ reducer: tasksReducer });
-
-console.log(store.getState());
+import { Provider } from 'react-redux';
+import { theme } from './theme';
+import store from './store';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <Normalize />
-      <GlobalStyle />
-      <App />
-    </ThemeProvider>
+    <Provider store={store}>
+      <ThemeProvider theme={theme}>
+        <Normalize />
+        <GlobalStyle />
+        <App />
+      </ThemeProvider>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

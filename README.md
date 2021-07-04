@@ -35,7 +35,7 @@ This project was bootstrapped with **Create React App**.
 <br>
 :white_check_mark: Functional Components
 <br>
-:white_check_mark: ES6 features
+:white_check_mark: ES6 + features
 <br>
 :white_check_mark: Immutability Concept
 <br>
