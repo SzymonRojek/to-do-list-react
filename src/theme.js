@@ -50,7 +50,7 @@ export const theme = {
     shadow: colorNames.alto,
     outline: colorNames.mineShaft,
     borderLight: colorNames.alto,
-    borderDark: colorNames.mineShaft, // mine shaft
+    borderDark: colorNames.mineShaft,
   },
   breakpoint: {
     mobile: 767,
