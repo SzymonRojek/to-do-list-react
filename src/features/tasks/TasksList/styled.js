@@ -22,7 +22,7 @@ export const Button = styled.button`
   justify-content: center;
   align-items: center;
   margin: 0 10px 0 10px;
-  color: ${({ theme }) => theme.color.doneButton};
+  color: ${({ theme }) => theme.doneButton.color};
   width: 30px;
   height: 30px;
   padding: 0;
@@ -31,18 +31,18 @@ export const Button = styled.button`
   transition: background-color .3s ease-in;
 
   ${({ remove }) => remove && css`
-    background-color: ${({ theme }) => theme.backgroundColor.removeButton};
+    background-color: ${({ theme }) => theme.removeButton.backgroundColor};
 
     &:hover {
-      background-color: ${({ theme }) => theme.hover.removeButton};
+      background-color: ${({ theme }) => theme.removeButton.hover};
     }
   `}
   
   ${({ toggleDone }) => toggleDone && css`
-    background-color: ${({ theme }) => theme.backgroundColor.doneButton};
+    background-color: ${({ theme }) => theme.doneButton.backgroundColor};
     
     &:hover {
-    background-color: ${({ theme }) => theme.hover.doneButton};
+    background-color: ${({ theme }) => theme.doneButton.hover};
   `}
 
   &:active {

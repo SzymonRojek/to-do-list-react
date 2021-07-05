@@ -1,38 +1,59 @@
+const colorNames = {
+  white: "#FFF",
+  gallery: "#EEE",
+  alto: "#DDD",
+  silver: "#C9C2C2",
+  crimson: "#DB1414",
+  cinnabar: "#EE4444",
+  teal: "#008080",
+  persianGreen: "#009999",
+  robinEggBlue: "#00CCCC",
+  bondiBlue: "#00B3B3",
+  forestGreen: "#1C8622",
+  japaneseLaurel: "#05Af05",
+  sherpaBlue: "#004D4D",
+  mineShaft: "#222",
+};
+
 export const theme = {
-  color: {
-    hideAndFinishButtons: "teal",
-    addButton: "#fff",
-    doneButton: "#fff"
+  body: {
+    backgroundColor: colorNames.gallery,
   },
-  backgroundColor: {
-    body: "#eee",
-    container: "#fff",
-    section: "#fff",
-    doneButton: "#1C8622",
-    removeButton: "hsl(0, 83%, 47%)",
-    addButton: "hsl(180, 100%, 25%)"
+  container: {
+    backgroundColor: colorNames.white,
   },
-  hover: {
-    addButton: "hsl(180, 100%, 30%)",
-    hideAndFinishButtons: "hsl(180, 100%, 40%)",
-    doneButton: "#05af05",
-    removeButton: "hsl(0, 83%, 60%)"
+  section: {
+    backgroundColor: colorNames.white,
   },
-  active: {
-    hideAndFinishButtons: "hsl(180, 100%, 15%)",
-    addButton: "hsl(180, 100%, 35%)"
+  addButton: {
+    color: colorNames.white,
+    backgroundColor: colorNames.teal,
+    hover: colorNames.persianGreen,
+    active: colorNames.bondiBlue,
   },
-  disabled: {
-    hideDoneButton: "rgb(201, 194, 194)"
+  hideAndFinishButtons: {
+    color: colorNames.teal,
+    hover: colorNames.robinEggBlue,
+    active: colorNames.sherpaBlue,
+    disabled: colorNames.silver,
+  },
+  doneButton: {
+    color: colorNames.white,
+    backgroundColor: colorNames.forestGreen,
+    hover: colorNames.japaneseLaurel,
+  },
+  removeButton: {
+    backgroundColor: colorNames.crimson,
+    hover: colorNames.cinnabar,
   },
   accent: {
-    shadow: "#ddd",
-    outline: "#222",
-    borderLight: "#ddd",
-    borderDark: "hsl(0, 1%, 17%)"
+    shadow: colorNames.alto,
+    outline: colorNames.mineShaft,
+    borderLight: colorNames.alto,
+    borderDark: colorNames.mineShaft, // mine shaft
   },
   breakpoint: {
     mobile: 767,
-    ipad: 768
-  } 
+    ipad: 768,
+  },
 };

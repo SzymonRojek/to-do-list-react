@@ -23,14 +23,14 @@ export const Input = styled.input`
 
 export const Button = styled.button`
   padding: 10px;
-  color: ${({ theme }) => theme.color.addButton};
+  color: ${({ theme }) => theme.addButton.color};
   border: 1px solid transparent;
-  background-color: ${({ theme }) => theme.backgroundColor.addButton};
+  background-color: ${({ theme }) => theme.addButton.backgroundColor};
   cursor: pointer;
   transition: transform .3s, background-color .3s ease-in;
 
   &:hover {
-    background-color: ${({ theme }) => theme.hover.addButton};
+    background-color: ${({ theme }) => theme.addButton.hover};
 
     @media (min-width: ${({ theme }) => theme.breakpoint.iPad}px) {
       transform: scale(1.1);
@@ -39,6 +39,6 @@ export const Button = styled.button`
 
   &:active {
     outline: 1px solid ${({ theme }) => theme.accent.outline};
-    background-color: ${({ theme }) => theme.active.addButton};
+    background-color: ${({ theme }) => theme.addButton.active};
   }
 `;
