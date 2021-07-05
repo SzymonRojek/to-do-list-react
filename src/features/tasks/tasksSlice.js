@@ -13,15 +13,17 @@ const tasksSlice = createSlice({
     toggleHideDone: state => {
       state.hideDone = !state.hideDone;
     },
-    toggleTaskDone: ({ tasks }, action) => {
-      const index = tasks.findIndex(task => task.id === action.payload);
+    toggleTaskDone: ({ tasks }, payload) => {
+      const index = tasks.findIndex(({ id }) => id === payload);
       tasks[index].done = !tasks[index].done;
     },
     setAllDone: ({ tasks }) => {
-      tasks.map(task => task.done = true);
+      for (const task of tasks) {
+        task.done = true;
+      }
     },
-    removeTask: ({ tasks }, action) => {
-      const index = tasks.findIndex(task => task.id === action.payload);
+    removeTask: ({ tasks }, payload) => {
+      const index = tasks.findIndex(({ id }) => id === payload);
       tasks.splice(index, 1);
     },
   },
