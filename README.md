@@ -41,7 +41,7 @@ This project was bootstrapped with **Create React App**.
 <br>
 :white_check_mark: Functional Components
 <br>
-:white_check_mark: ES6 + features
+:white_check_mark: ES12 + features
 <br>
 :white_check_mark: Hooks: useState, useEffect, useRef, useSelector, useDispatch
 <br>
