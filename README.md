@@ -35,15 +35,15 @@ This is a simple To-Do list application, helps to organize our daily tasks. Use 
 This project was bootstrapped with **Create React App**.
 
 ## I have used:
+:white_check_mark: react-dom, react-redux, redux toolkit
+<br>
 :white_check_mark: Styled Components
 <br>
 :white_check_mark: Functional Components
 <br>
 :white_check_mark: ES6 + features
 <br>
-:white_check_mark: Immutability Concept
-<br>
-:white_check_mark: Hooks: useState, useEffect, useRef
+:white_check_mark: Hooks: useState, useEffect, useRef, useSelector, useDispatch
 <br>
 :white_check_mark: Custom Hooks
 <br>

@@ -32,7 +32,7 @@ export const {
   toggleHideDone, 
   toggleTaskDone, 
   setAllDone, 
-  removeTask 
+  removeTask,
 } = tasksSlice.actions;
 export const selectTasks = state => state.tasks;
 export default tasksSlice.reducer;
