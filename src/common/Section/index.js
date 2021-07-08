@@ -5,11 +5,14 @@ import {
   BodyWrapper 
 } from './styled';
 
-export const Section = ({ title, body, extraHeaderContent }) => (
+export const Section = ({ title, button, body, extraHeaderContent }) => (
   <Wrapper>
     <Header>
-      <Heading>{title}</Heading>
-      {extraHeaderContent}
+      <Heading>
+        {title}
+      </Heading>
+        {button}
+        {extraHeaderContent}
     </Header>
     <BodyWrapper>
       {body}
