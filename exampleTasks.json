@@ -2,11 +2,16 @@
   {
     "content":"play the guitar",
     "done":false,
-    "id":"eEGvYU2aMfVLYzguarbzb"
+    "id":"s5Ctu-RzTxarLcCwT0Bcp"
   },
   {
-  "content":"learning react saga",
-  "done":false,
-  "id":"K8xtoHtx3ck1QHDJMCT0Q"
+    "content":"read a book - You don'\t know Js",
+    "done":false,
+    "id":"SUrEZY1NabhsTyNSV9ywj"
+  },
+  {
+    "content":"start to learn react-redux, redux-saga & routing",
+    "done":false,
+    "id":"SUrEZY1NabhsTyNSdfsfw"
   }
 ]
