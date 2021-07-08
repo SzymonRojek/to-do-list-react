@@ -4,7 +4,7 @@ import { getTasksFromLocalStorage } from './tasksLocalStorage';
 const tasksSlice = createSlice({
   name: "tasks",
   initialState: {
-    tasks: [],
+    tasks: getTasksFromLocalStorage(),
     hideDone: false,
     loading: false,
   }, 
@@ -34,7 +34,6 @@ const tasksSlice = createSlice({
     setTasks: (state, { payload: tasks }) => {
       state.tasks = tasks;
       state.loading = false;
-      console.log(state.loading);
     },
     setError: state => {
       state.loading = false;
@@ -54,6 +53,6 @@ export const {
 } = tasksSlice.actions;
 
 export const selectTasks = state => state.tasks;
-export const selectLoading = state => state.loading;
+export const selectLoading = state => state.tasks.loading;
 
 export default tasksSlice.reducer;
