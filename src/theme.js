@@ -25,6 +25,9 @@ export const theme = {
   section: {
     backgroundColor: colorNames.white,
   },
+  navigation: {
+    backgroundColor: colorNames.teal,
+  },
   addButton: {
     color: colorNames.white,
     backgroundColor: colorNames.teal,
