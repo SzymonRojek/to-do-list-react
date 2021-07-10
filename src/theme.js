@@ -26,7 +26,13 @@ export const theme = {
     backgroundColor: colorNames.white,
   },
   navigation: {
+    color: colorNames.white,
     backgroundColor: colorNames.teal,
+    hover: colorNames.gallery,
+  },
+  links : {
+    color: colorNames.teal,
+    hover: colorNames.robinEggBlue,
   },
   addButton: {
     color: colorNames.white,
