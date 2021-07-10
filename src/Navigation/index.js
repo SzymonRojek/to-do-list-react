@@ -4,10 +4,10 @@ export const Navigation = () => (
   <nav>
     <List>
       <Item left>
-        <StyledNavLink to="/zadania">Zadania</StyledNavLink>
+        <StyledNavLink to="/zadania">Tasks</StyledNavLink>
       </Item>
       <Item right>
-        <StyledNavLink to="/author">About me</StyledNavLink>
+        <StyledNavLink to="/author">About</StyledNavLink>
       </Item>
     </List>
   </nav>

@@ -11,12 +11,13 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-  padding: 15px;
+  padding: 5px 0 5px 0;
   margin: 0 10px;
   position: relative;
 
   &::after {
     content: "";
+    display: block;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -43,7 +44,7 @@ export const Item = styled.li`
 const activeClassName = "active";
 
 export const StyledNavLink = styled(NavLink).attrs(() => ({ activeClassName}))`
-  padding: 20px;
+  font-size: 18px;
   color: ${({ theme }) => theme.navigation.color};
   letter-spacing: 1px;
   text-decoration: none;
