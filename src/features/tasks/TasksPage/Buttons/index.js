@@ -23,7 +23,6 @@ export const Buttons = () => {
         <>
           <Button 
             onClick={() => dispatch(toggleHideDone())}
-            disabled={isEveryTaskDone} 
           >
             {hideDone ? 'Show' : 'Hide'} done
           </Button>
