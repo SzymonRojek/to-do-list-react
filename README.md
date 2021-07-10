@@ -4,7 +4,12 @@
 
 
 ## Description:
-This is a simple To-Do list application, helps to organize our daily tasks. Use it to capture and organize tasks the moment they pop into your head. 
+This is a simple To-Do list application, helps to organize our daily tasks. Use it to capture and organize tasks the moment they pop into your head:
+- download example tasks from json file
+- add new task
+- filter tasks
+- click the task and read about its details
+- check mark task or finish them all by one click
 
 ## Technologies:
 
@@ -35,7 +40,7 @@ This is a simple To-Do list application, helps to organize our daily tasks. Use 
 This project was bootstrapped with **Create React App**.
 
 ## I have used:
-:white_check_mark: react-dom, react-redux, redux toolkit
+:white_check_mark: React-Dom, React-Redux, Redux-Toolkit, Redux-Saga
 <br>
 :white_check_mark: Styled Components
 <br>
@@ -43,9 +48,11 @@ This project was bootstrapped with **Create React App**.
 <br>
 :white_check_mark: ES12 + features
 <br>
-:white_check_mark: Hooks: useState, useEffect, useRef, useSelector, useDispatch
+:white_check_mark: Hooks: useState, useEffect, useRef, useSelector, useDispatch, useHistory, useLocation
 <br>
 :white_check_mark: Custom Hooks
+<br>
+:white_check_mark: Router
 <br>
 :white_check_mark: Local Storage
 <br>
