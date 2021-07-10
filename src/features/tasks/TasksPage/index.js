@@ -3,15 +3,15 @@ import { Header } from '../../../common/Header';
 import { Section } from '../../../common/Section';
 import { Form } from '../../../features/tasks/TasksPage/Form';
 import { TasksList } from './TasksList';
-import { Buttons } from '../../../common/Buttons';
-import { DownloadButton } from './DownloadButton';
+import { Buttons } from './Buttons';
+import { DownloadExapleTasksButton } from './DownloadExampleTasksButton';
 import { Search } from './Search';
 
 export const TasksPage = () => (
   <Container> 
     <Header title="List of tasks" />
     <Section 
-      button={<DownloadButton />}
+      button={<DownloadExapleTasksButton />}
       title="Add new task" 
       body={<Form />} 
     />
