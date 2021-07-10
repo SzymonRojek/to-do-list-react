@@ -15,7 +15,7 @@ export const TaskPage = () => {
       <Section 
         title={task ? task.content : "Task has not been found 😢"}
         body={
-        <><strong>Finsihed:</strong> {task.done ? "Yes" : "No"}</>} 
+        <><strong>Finshed:</strong> {task.done ? "Yes" : "No"}</>} 
       />
     </Container>
   );
