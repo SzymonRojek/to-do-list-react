@@ -6,13 +6,15 @@ import {
   toggleHideDone, 
   setAllDone, 
   selectAreTasksEmpty, 
-  selectIsEveryTaskDone, 
+  selectIsEveryTaskDone,
+  selectIsEveryTaskNotDone,
   selectHidedone 
 } from '../../tasksSlice';
 
 export const Buttons = () => {
   const areTasksEmpty = useSelector(selectAreTasksEmpty);
   const isEveryTaskDone = useSelector(selectIsEveryTaskDone);
+  const isEveryTaskNotDone = useSelector(selectIsEveryTaskNotDone)
   const hideDone = useSelector(selectHidedone);
 
   const dispatch = useDispatch();
@@ -23,6 +25,7 @@ export const Buttons = () => {
         <>
           <Button 
             onClick={() => dispatch(toggleHideDone())}
+            disabled={isEveryTaskNotDone} 
           >
             {hideDone ? 'Show' : 'Hide'} done
           </Button>
