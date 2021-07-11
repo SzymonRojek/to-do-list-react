@@ -33,6 +33,7 @@ export const theme = {
   links : {
     color: colorNames.teal,
     hover: colorNames.robinEggBlue,
+    active: colorNames.sherpaBlue,
   },
   addButton: {
     color: colorNames.white,

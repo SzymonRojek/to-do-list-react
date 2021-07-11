@@ -10,5 +10,8 @@ export default styled(Link)`
   &:hover {
     color: ${({ theme }) => theme.links.hover}
   }
-`;
 
+  &:active{
+    color: ${({ theme }) => theme.links.active}
+  }
+`;
