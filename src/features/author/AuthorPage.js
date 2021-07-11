@@ -10,11 +10,11 @@ export const AuthorPage = () => (
       title="Hello! I'm Szymon 👋" 
       body={
         <>
-          <p>I learn programming and I <strong>love</strong>IT! 💖</p>
+          <p>I'm learning programming and I <strong>love</strong>IT! 💖</p>
           <p>My goal is to become a front-end developer 	💫</p>
           <br />
           <p>Would you like to get to know more about me?</p>
-          <p><strong>Please</strong>, have a check my github profile:</p>
+          <p><strong>Please</strong> have a look at my github profile below:</p>
           <Link to="https://github.com/SzymonRojek">GitHub</Link>
         </>
       }
