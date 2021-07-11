@@ -23,7 +23,7 @@ export const Item = styled.li`
     bottom: 0;
     width: 100%;
     height: .5px;
-    background-color: white;
+    user-select: none;
     transform: scale(0, 1);
     transition: transform 0.3s ease;
       
@@ -48,6 +48,7 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({ activeClassName}))`
   color: ${({ theme }) => theme.navigation.color};
   letter-spacing: 1px;
   text-decoration: none;
+  user-select: none;
   transition: .2s ease;
 
   &:hover {

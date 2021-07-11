@@ -21,6 +21,7 @@ export const Item = styled.li`
 export const StyledLink = styled(Link)`
   text-decoration: none;
   color: ${({ theme }) => theme.links.color};
+  user-select: none;
   transition: color .2s ease-in;
 
   &:hover {
