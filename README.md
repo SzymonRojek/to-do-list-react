@@ -1,6 +1,6 @@
 ## 🎥  Preview site :arrow_right: [clickHere](https://szymonrojek.github.io/to-do-list-react/)
 
-<img src="./src/images/to-do-list.gif" width="400" height="260">
+<img src="./src/images/to-do.gif" width="320" height="260">
 
 
 ## Description:
