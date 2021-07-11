@@ -7,15 +7,14 @@ import {
 } from '../../tasksSlice';
 import { useQueryParameter } from '../queryParameters';
 import searchQueryParamName from '../searchQueryParamName';
+import { Link } from '../../../../common/Link';
 import {
   List,
   Item,
-  StyledLink,
   Button,
   Content
 } from './styled';
  
-
 export const TasksList = () => {
   const query = useQueryParameter(searchQueryParamName);
 
@@ -38,7 +37,7 @@ export const TasksList = () => {
           {task.done ? "✓" : ""}
         </Button>
         <Content done={task.done}>
-          <StyledLink to={`/zadania/${task.id}`}>{task.content}</StyledLink>
+          <Link to={`/zadania/${task.id}`}>{task.content}</Link>
         </Content>
         <Button
           remove  
