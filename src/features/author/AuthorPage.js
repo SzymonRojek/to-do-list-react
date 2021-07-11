@@ -1,7 +1,7 @@
 import { Container } from '../../common/Container';
 import { Header } from '../../common/Header';
 import { Section } from '../../common/Section';
-import { Link } from '../../common/Link'
+import { Link } from '../../common/Link';
 
 export const AuthorPage = () => (
   <Container> 
