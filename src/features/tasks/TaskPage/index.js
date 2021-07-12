@@ -16,8 +16,8 @@ export const TaskPage = () => {
         title={task ? task.content : "Task has not been found 😢"}
         body={task && (
           <>
-            <strong>Finshed:</strong> 
-            {task.done ? "Yes! 🙌" : "No! 😣"}
+            <strong>Finshed: </strong> 
+            {task.done ? "Yes 🙌" : "No 😣"}
           </>
         )}
       />

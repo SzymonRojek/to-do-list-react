@@ -10,7 +10,7 @@ export const AuthorPage = () => (
       title="Hello! I'm Szymon 👋" 
       body={
         <>
-          <p>I'm learning programming and I <strong>love</strong>IT! 💖</p>
+          <p>I'm learning programming and I <strong>love</strong> IT! 💖</p>
           <p>My goal is to become a front-end developer 	💫</p>
           <br />
           <p>Would you like to get to know more about me?</p>
