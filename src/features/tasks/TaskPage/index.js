@@ -14,8 +14,12 @@ export const TaskPage = () => {
       <Header title="Task details:" />
       <Section 
         title={task ? task.content : "Task has not been found 😢"}
-        body={
-        <><strong>Finshed:</strong> {task ? task.done ? "Yes! 🙌" : "No! 😣" : ""}</>} 
+        body={task && (
+          <>
+            <strong>Finshed:</strong> 
+            {task.done ? "Yes! 🙌" : "No! 😣"}
+          </>
+        )}
       />
     </Container>
   );
