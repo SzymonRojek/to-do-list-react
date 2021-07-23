@@ -11,9 +11,9 @@ export const TasksPage = () => (
   <Container>
     <Header title="List of tasks" />
     <Section
-      button={<DownloadExapleTasksButton />}
       title="Add new task"
       body={<Form />}
+      extraHeaderContent={<DownloadExapleTasksButton />}
     />
     <Section title="Search tasks" body={<Search />} />
     <Section
