@@ -8,14 +8,14 @@ import {
   selectAreTasksEmpty,
   selectIsEveryTaskDone,
   selectIsEveryTaskNotDone,
-  selectHidedone,
+  selectHideDone,
 } from "../../tasksSlice";
 
 export const Buttons = () => {
   const areTasksEmpty = useSelector(selectAreTasksEmpty);
   const isEveryTaskDone = useSelector(selectIsEveryTaskDone);
   const isEveryTaskNotDone = useSelector(selectIsEveryTaskNotDone);
-  const hideDone = useSelector(selectHidedone);
+  const hideDone = useSelector(selectHideDone);
 
   const dispatch = useDispatch();
 
