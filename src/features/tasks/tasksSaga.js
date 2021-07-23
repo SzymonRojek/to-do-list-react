@@ -22,7 +22,10 @@ function* fetchExampleTasksHandler() {
     yield put(setTasks(exampleTasks));
   } catch (error) {
     yield put(setError());
-    yield call(alert, "Something wrong!");
+    yield call(
+      alert,
+      "Sorry, can not get any data. Please check your internet connection."
+    );
   }
 }
 
