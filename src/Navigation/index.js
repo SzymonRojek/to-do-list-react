@@ -1,5 +1,5 @@
-import { List, Item, StyledNavLink } from './styled';
- 
+import { List, Item, StyledNavLink } from "./styled";
+
 export const Navigation = () => (
   <nav>
     <List>

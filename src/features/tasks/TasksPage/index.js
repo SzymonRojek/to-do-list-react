@@ -1,28 +1,25 @@
-import { Container } from '../../../common/Container';
-import { Header } from '../../../common/Header';
-import { Section } from '../../../common/Section';
-import { Form } from '../../../features/tasks/TasksPage/Form';
-import { TasksList } from './TasksList';
-import { Buttons } from './Buttons';
-import { DownloadExapleTasksButton } from './DownloadExampleTasksButton';
-import { Search } from './Search';
+import { Container } from "../../../common/Container";
+import { Header } from "../../../common/Header";
+import { Section } from "../../../common/Section";
+import { Form } from "../../../features/tasks/TasksPage/Form";
+import { TasksList } from "./TasksList";
+import { Buttons } from "./Buttons";
+import { DownloadExapleTasksButton } from "./DownloadExampleTasksButton";
+import { Search } from "./Search";
 
 export const TasksPage = () => (
-  <Container> 
+  <Container>
     <Header title="List of tasks" />
-    <Section 
-      button={<DownloadExapleTasksButton />}
-      title="Add new task" 
-      body={<Form />} 
-    />
     <Section
-      title="Search tasks"
-      body={<Search />}
+      button={<DownloadExapleTasksButton />}
+      title="Add new task"
+      body={<Form />}
     />
+    <Section title="Search tasks" body={<Search />} />
     <Section
       title="List of to do"
       body={<TasksList />}
       extraHeaderContent={<Buttons />}
     />
-</Container>
+  </Container>
 );

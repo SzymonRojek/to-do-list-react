@@ -30,7 +30,7 @@ export const theme = {
     backgroundColor: colorNames.teal,
     hover: colorNames.gallery,
   },
-  links : {
+  links: {
     color: colorNames.teal,
     hover: colorNames.robinEggBlue,
     active: colorNames.sherpaBlue,

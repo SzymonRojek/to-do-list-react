@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components";
 
 export const List = styled.ul`
   margin: 0;
@@ -14,8 +14,12 @@ export const Item = styled.li`
   padding: 10px;
   border-bottom: 1px solid ${({ theme }) => theme.accent.borderLight};
 
-  ${({ hidden }) => hidden && css`display: none;`}
-;`
+  ${({ hidden }) =>
+    hidden &&
+    css`
+      display: none;
+    `};
+`;
 
 export const Button = styled.button`
   display: flex;
@@ -28,17 +32,21 @@ export const Button = styled.button`
   padding: 0;
   border: none;
   cursor: pointer;
-  transition: background-color .3s ease-in;
+  transition: background-color 0.3s ease-in;
 
-  ${({ remove }) => remove && css`
-    background-color: ${({ theme }) => theme.removeButton.backgroundColor};
+  ${({ remove }) =>
+    remove &&
+    css`
+      background-color: ${({ theme }) => theme.removeButton.backgroundColor};
 
-    &:hover {
-      background-color: ${({ theme }) => theme.removeButton.hover};
-    }
-  `}
-  
-  ${({ toggleDone }) => toggleDone && css`
+      &:hover {
+        background-color: ${({ theme }) => theme.removeButton.hover};
+      }
+    `}
+
+  ${({ toggleDone }) =>
+    toggleDone &&
+    css`
     background-color: ${({ theme }) => theme.doneButton.backgroundColor};
     
     &:hover {
@@ -53,5 +61,9 @@ export const Button = styled.button`
 export const Content = styled.span`
   word-break: break-word;
 
-  ${({ done }) => done && css`text-decoration: line-through;`}
+  ${({ done }) =>
+    done &&
+    css`
+      text-decoration: line-through;
+    `}
 `;

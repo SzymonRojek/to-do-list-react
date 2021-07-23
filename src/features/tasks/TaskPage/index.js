@@ -1,26 +1,28 @@
-import { useParams } from 'react-router';
-import { useSelector } from 'react-redux';
-import { Container } from '../../../common/Container';
-import { Header } from '../../../common/Header';
-import { Section } from '../../../common/Section';
-import { getTaskById } from '../tasksSlice';
+import { useParams } from "react-router";
+import { useSelector } from "react-redux";
+import { Container } from "../../../common/Container";
+import { Header } from "../../../common/Header";
+import { Section } from "../../../common/Section";
+import { getTaskById } from "../tasksSlice";
 
 export const TaskPage = () => {
   const { id } = useParams();
-  const task = useSelector(state => getTaskById(state, id));
+  const task = useSelector((state) => getTaskById(state, id));
 
   return (
-    <Container> 
+    <Container>
       <Header title="Task details:" />
-      <Section 
+      <Section
         title={task ? task.content : "Task has not been found 😢"}
-        body={task && (
-          <>
-            <strong>Finshed: </strong> 
-            {task.done ? "Yes 🙌" : "No 😣"}
-          </>
-        )}
+        body={
+          task && (
+            <>
+              <strong>Finshed: </strong>
+              {task.done ? "Yes 🙌" : "No 😣"}
+            </>
+          )
+        }
       />
     </Container>
   );
-};  
+};

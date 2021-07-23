@@ -1,5 +1,5 @@
-import styled, { css } from 'styled-components';
-import { NavLink } from 'react-router-dom';
+import styled, { css } from "styled-components";
+import { NavLink } from "react-router-dom";
 
 export const List = styled.ul`
   margin: 0;
@@ -27,14 +27,18 @@ export const Item = styled.li`
     background-color: ${({ theme }) => theme.navigation.hover};
     transform: scale(0, 1);
     transition: transform 0.3s ease;
-      
-    ${({ left }) => left && css`
-      transform-origin: 0% 100%;
-    `}
 
-    ${({ right }) => right && css`
-      transform-origin: 100% 0%;
-    `}
+    ${({ left }) =>
+      left &&
+      css`
+        transform-origin: 0% 100%;
+      `}
+
+    ${({ right }) =>
+      right &&
+      css`
+        transform-origin: 100% 0%;
+      `}
   }
 
   &:hover::after {
@@ -50,7 +54,7 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({ activeClassName }))`
   letter-spacing: 1px;
   text-decoration: none;
   user-select: none;
-  transition: .2s ease;
+  transition: 0.2s ease;
 
   &:hover {
     color: ${({ theme }) => theme.navigation.hover};

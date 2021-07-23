@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const FormWrapper = styled.form`
   display: grid;
@@ -16,7 +16,7 @@ export const Button = styled.button`
   border: 1px solid transparent;
   background-color: ${({ theme }) => theme.addButton.backgroundColor};
   cursor: pointer;
-  transition: transform .3s, background-color .3s ease-in;
+  transition: transform 0.3s, background-color 0.3s ease-in;
 
   &:hover {
     background-color: ${({ theme }) => theme.addButton.hover};

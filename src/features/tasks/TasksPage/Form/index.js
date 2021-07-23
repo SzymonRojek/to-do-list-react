@@ -1,9 +1,9 @@
-import { useState, useRef  } from 'react';
-import { useDispatch } from 'react-redux';
-import { nanoid } from '@reduxjs/toolkit';
-import { FormWrapper, Button } from './styled';
-import { addTask } from '../../tasksSlice';
-import Input from '../../Input';
+import { useState, useRef } from "react";
+import { useDispatch } from "react-redux";
+import { nanoid } from "@reduxjs/toolkit";
+import { FormWrapper, Button } from "./styled";
+import { addTask } from "../../tasksSlice";
+import Input from "../../Input";
 
 export const Form = () => {
   const [newTaskContent, setNewTaskContent] = useState("");
@@ -16,36 +16,36 @@ export const Form = () => {
 
   const dispatch = useDispatch();
 
-  const onFormSubmit = event => {
+  const onFormSubmit = (event) => {
     event.preventDefault();
-    
+
     const trimmedNewTaskContent = newTaskContent.trim();
 
-      if (!trimmedNewTaskContent) {
-        return;
-      }
+    if (!trimmedNewTaskContent) {
+      return;
+    }
 
-    dispatch(addTask({
-      content: trimmedNewTaskContent,
-      done: false,
-      id: nanoid(),
-    }));
+    dispatch(
+      addTask({
+        content: trimmedNewTaskContent,
+        done: false,
+        id: nanoid(),
+      })
+    );
 
     setNewTaskContent("");
   };
 
   return (
     <FormWrapper onSubmit={onFormSubmit}>
-      <Input 
+      <Input
         ref={inputRef}
         value={newTaskContent}
-        placeholder="What you have to do?" 
-        autoFocus 
+        placeholder="What you have to do?"
+        autoFocus
         onChange={({ target }) => setNewTaskContent(target.value)}
       />
-      <Button onClick={handleFocus}>
-        Add task
-      </Button>
+      <Button onClick={handleFocus}>Add task</Button>
     </FormWrapper>
-  ); 
+  );
 };

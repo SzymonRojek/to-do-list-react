@@ -1,13 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { App } from './App';
-import reportWebVitals from './reportWebVitals';
-import { Normalize } from 'styled-normalize';
-import { GlobalStyle } from './GlobalStyle';
+import React from "react";
+import ReactDOM from "react-dom";
+import { App } from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { Normalize } from "styled-normalize";
+import { GlobalStyle } from "./GlobalStyle";
 import { ThemeProvider } from "styled-components";
-import { Provider } from 'react-redux';
-import { theme } from './theme';
-import store from './store';
+import { Provider } from "react-redux";
+import { theme } from "./theme";
+import store from "./store";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -19,7 +19,7 @@ ReactDOM.render(
       </ThemeProvider>
     </Provider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function

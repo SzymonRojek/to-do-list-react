@@ -7,7 +7,7 @@ export const Button = styled.button`
   background-color: transparent;
   outline: none;
   cursor: pointer;
-  transition: color .2s ease-in;
+  transition: color 0.2s ease-in;
 
   &:hover {
     color: ${({ theme }) => theme.hideAndFinishButtons.hover};
