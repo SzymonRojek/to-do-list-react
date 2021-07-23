@@ -1,19 +1,21 @@
 import StyledLink from "./styled";
 
-export const Link = ({ to, children, ...props }) => {
+export const Link = ({ to, children, ...otherProps }) => {
   if (!to) {
-    return <span {...props}>{children}</span>;
-  } else if (/^https?:\/\//.test(to)) {
+    return <span {...otherProps}>{children}</span>;
+  }
+
+  if (/^https?:\/\//.test(to)) {
     return (
-      <StyledLink as="a" target="_blank" href={to} {...props}>
-        {children}
-      </StyledLink>
-    );
-  } else {
-    return (
-      <StyledLink to={to} {...props}>
+      <StyledLink as="a" target="_blank" href={to} {...otherProps}>
         {children}
       </StyledLink>
     );
   }
+
+  return (
+    <StyledLink to={to} {...otherProps}>
+      {children}
+    </StyledLink>
+  );
 };
