@@ -1,10 +1,11 @@
-## 🎥  Preview site :arrow_right: [clickHere](https://szymonrojek.github.io/to-do-list-react/)
+## 🎥 Preview site :arrow_right: [clickHere](https://szymonrojek.github.io/to-do-list-react/)
 
 <img src="./src/images/to-do.gif" width="320" height="260">
 
-
 ## Description:
+
 This is a simple To-Do list application, helps to organize our daily tasks. Use it to capture and organize tasks the moment they pop into your head:
+
 - download example tasks from json file
 - add new task
 - filter tasks
@@ -40,13 +41,14 @@ This is a simple To-Do list application, helps to organize our daily tasks. Use 
 This project was bootstrapped with **Create React App**.
 
 ## I have used:
+
 :white_check_mark: React-Dom, React-Redux, Redux-Toolkit, Redux-Saga
 <br>
 :white_check_mark: Styled Components
 <br>
 :white_check_mark: Functional Components
 <br>
-:white_check_mark: ES12 + features
+:white_check_mark: ES12+ features
 <br>
 :white_check_mark: Hooks: useState, useEffect, useRef, useSelector, useDispatch, useHistory, useLocation
 <br>
@@ -61,14 +63,17 @@ This project was bootstrapped with **Create React App**.
 ## Available Scripts:
 
 **1.** Install packages in the directory:
+
 ```
 npm install
 ```
 
 **2.** To start development and server
+
 ```
 npm start
 ```
+
 Runs the app in the development mode.
 Open http://localhost:3000 to view it in the browser.
 
@@ -76,9 +81,11 @@ The page will reload if you make edits.
 You will also see any lint errors in the console.
 
 **3.** Build version
+
 ```
 npm run build
 ```
+
 Builds the app for production to thpm se build folder.
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
@@ -86,12 +93,15 @@ The build is minified and the filenames include the hashes.
 Your app is ready to be deployed!
 
 **4.** Gh-pages deploy
+
 ```
 npm run deploy
 ```
 
 **5.** Eject
+
 ```
 npm run eject
 ```
+
 **Note:** this is a one-way operation. Once you eject, you can’t go back! This command will remove the single build dependency from your project.
